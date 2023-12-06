@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 7vh;
+    background: rgba(22, 22, 22, 0.808);
+}
+
+.menu-content{
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+}
+
+.logo{
+    color: white;
+    font-size: 18px;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+.menu-content .list-itens{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.menu-content .list-itens a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.menu-content .list-itens a::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background: rgb(255, 255, 255);
+    transition: all 1.5s ease;
+}
+
+.menu-content .list-itens a:hover:before{
+    width: 100%;
+}
+
+.home > main{
+    width: 100vw;
+    height: 93vh;
+    font-size: 62.5%;
+    color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(rgba(17,17,17,0.8),rgba(20,20,20,1)), url(../images/backgroundHome.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .main-content .primary-text{
+    width: 850px;
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.home .main-content .second-text{
+    text-transform: uppercase;
+    margin-bottom: 70px;
+    font-size: 20px;
+    color: gray;
+}
+
+.servicos .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.servicos .card {
+    background: #fff;
+    box-shadow: 0px 2px 23px #26395338;
+    border-radius: 20px;
+    width: 400px;
+    margin: 20px;
+}
+
+.servicos .topCard {
+    padding: 20px;
+    padding-top: 0px;
+    color: #000000;
+}
+
+.servicos .bottomCard {
+    padding: 20px;
+    color: #000000;
+}
+
+.servicos  .mediaCard1 {
+    background: url("../images/dev_mobile.png") center/cover;
+    height: 325px;
+    width: 100%;
+}
+
+.servicos  .mediaCard2 {
+  background: url("../images/dev_web.jpg") center/cover;
+  height: 325px;
+  width: 100%;
+}
+
+.servicos .mediaCard3 {
+  background: url("../images/ciber.jpg") center/cover;
+  height: 325px;
+  width: 100%;
+}
+
+.servicos .mediaCard4 {
+  background: url("../images/suporte.png") center/cover;
+  height: 325px;
+  width: 100%;
+}
+
+.sobre section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sobre h2 {
+    color: #333;
+}
+
+.sobre ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sobre li {
+    margin-bottom: 10px;
+}
+
+.conta .main{
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+    background: black;
+    background: linear-gradient(rgba(17, 17, 17, 0.774),rgba(20, 20, 20, 0.61)), url(../images/backgroundConta.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.conta .main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conta .left-login{
+    width: 50vw;
+    height: 100vh;
+    padding-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conta .left-login > h1{
+    margin-bottom: 200px;
+    font-size: 2.5vw;
+    color: #ffffff;
+}
+
+.conta .left-animation{
+    width: 35vw;
+}
+
+.conta .right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conta .card{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:  38.5vh;
+    background: #000000;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.conta .textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.conta .textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.conta .textfield > label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.conta .textfield > input::placeholder{
+    color: #f0ffff94;
+}
+
+.conta .btns{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.conta .btns > button{
+    outline: none;
+    width: 250px;
+    height: 90px;
+    border: 1px solid white;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    background: white;
+    font-weight: bold;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+}
+
+.conta .btns > button::before{
+    content: "";
+    border-radius: 20px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    width: 0px;
+    height: 60px;
+    background: rgb(61, 61, 61);
+    z-index: -1;
+    transition: 1s;
+}
+
+.conta .btns > button:hover:before{
+    width: 100%;
+}
+
+.conta .btns > button:hover{
+    color: rgb(95, 94, 94);
+    border: none;
+    box-shadow: 0px 10px 5px -5px;
+}
+
+.conta .btns a {
+    border: none;
+    width: 250px;
+    height: 60px;
+    outline: none;
+    padding: 15px;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+.conta .btn-exp{
+    font-size: 17px;
+}
+
+.conta .btn-personal{
+    font-size: 17px;
+}
+
+.conta main{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background: #1d1c1c;
+    box-sizing: border-box;
+}
+.conta .center-login{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conta .center-login > h1{
+    font-size: 3.5svw;
+    color: #f5f5f5;
+}
+
+.conta .card-login{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #f5f5f5;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.conta .card-login > h1{
+    color: #000000;
+    font-weight: 800;
+    margin: 0;
+}
+
+.conta .textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.conta .textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #333333;
+    color: #f0ffffde;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.conta .textfield > label{
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.conta .textfield > input::placeholder{
+    color: #f0ffff94;
+}
+
+.conta .btn-login{
+    width: 75%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: rgb(255, 255, 255);
+    background: #000000;
+    cursor: pointer;
+}
+
+.login main{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background: #1d1c1c	;
+    box-sizing: border-box;
+}
+
+.login .center-login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login .center-login > h1{
+    font-size: 3.5svw;
+    color: #f5f5f5;
+}
+
+.login .card-login{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #f5f5f5;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.login .card-login > h1{
+    color: #000000;
+    font-weight: 800;
+    margin: 0;
+}
+
+.login .textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.login .textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #333333;
+    color: #f0ffffde;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.login .textfield > label{
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.login .textfield > input::placeholder{
+    color: #f0ffff94;
+}
+
+.login .btn-login{
+    width: 75%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: rgb(255, 255, 255);
+    background: #000000;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -7px #4d15b6
+}
