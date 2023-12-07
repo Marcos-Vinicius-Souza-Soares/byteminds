@@ -5,7 +5,7 @@
 </p>
 <p>
     <form action="" method= 'get'>
-        <button type="submit" value="<?=$mercadorias['id']?>" name= 'sim'>
+        <button type="submit" value="<?=$projetos['id']?>" name= 'sim'>
             Sim
         </button>
         <button type="submit" name = 'nao'>
