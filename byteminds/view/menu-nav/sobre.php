@@ -1,10 +1,11 @@
 <div class = "sobre">
     <body>
-        <section>
+        <main>
+            <section>
                 <h2>Quem Somos</h2><br>
-                <p>Somos uma empresa dedicada a desenvolver programas e iniciamos nossas atividades em 2022, 
-                reunimos um grupo de amigos do curso de informática e fizemos uma startup que logo evoluiu para uma empresa com escalas nacionais.</p>
-                <p>Nossa missão é identificar a deficiência da área de tecnologia no Brasil,
+                <p>Somos uma empresa dedicada a desenvolver programas e iniciamos nossas atividades em 2022, <br>
+                reunimos um grupo de amigos do curso de informática e fizemos uma startup que logo evoluiu para uma empresa com escalas nacionais.</p><br>
+                <p>Nossa missão é identificar a deficiência da área de tecnologia no Brasil,<br>
                 formando uma equipe de qualidade e tentar evoluir à área digital de forma á custo benefício e com eficiência</p>
             </section>
             <section>
@@ -28,5 +29,6 @@
                     <li>Pedro Lucas - Arquitetura de Dados</li>
                 </ul>
             </section>
+        </main>
     </body>
 </div>
